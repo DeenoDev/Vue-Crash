@@ -13,7 +13,7 @@ const app = Vue.createApp({
             const res = await fetch('https://randomuser.me/api');
             const { results } = await res.json(); //Destructured variable since res.json will return a results array with single user by default.
 
-            console.log(results);
+            // console.log(results);
 
             this.firstName = results[0].name.first;
             this.lastName = results[0].name.last;
@@ -25,3 +25,5 @@ const app = Vue.createApp({
 })
 
 app.mount('#app');
+
+//RANDOM USER GENERATOR COMPLETE
