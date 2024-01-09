@@ -8,6 +8,11 @@ const app = Vue.createApp({
             picture: 'https://randomuser.me/api/portraits/men.jpg',
         }
     },
+    methods: {
+        getUser(){
+            console.log(this.firstName)
+        },
+    },
 })
 
 app.mount('#app');
